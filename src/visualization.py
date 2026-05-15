@@ -42,11 +42,9 @@ def plot_classification_counts(df):
 
     plt.figure(figsize=(8, 5))
     plt.bar(counts.index.astype(str), counts.to_numpy(dtype=float))
-
     plt.title("Classification Counts")
     plt.xlabel("Classification")
     plt.ylabel("Number of Coins")
-
     plt.tight_layout()
     plt.show()
 
